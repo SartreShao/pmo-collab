@@ -1,0 +1,19 @@
+{
+  "name": "pmo-collab",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "人机协同项目管理系统",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:migrate": "wrangler d1 execute pmo-collab-db --remote --file=./schema.sql"
+  },
+  "dependencies": {
+    "hono": "^4.0.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.100.0"
+  }
+}
